@@ -57,13 +57,11 @@ Here are some example labels (can be edited in `labels.json`):
 
 ## 📁 Project Structure
 
-sport-image-classifier/
-│
-├── app.py                 # Main Streamlit app
-├── model_xception.h5      # Trained model file
-├── labels.json            # Class labels
-├── requirements.txt       # Dependencies
-└── README.md              # Project readme
+- `app.py` — Main Streamlit app that runs the image classifier interface.
+- `model_xception.h5` — Pre-trained Keras model (Xception) used for prediction.
+- `labels.json` — JSON file storing the class labels (e.g., Basketball, Football, etc.).
+- `requirements.txt` — List of dependencies required to run the project.
+- `README.md` — Documentation and instructions for the project.
 
 ---
 
