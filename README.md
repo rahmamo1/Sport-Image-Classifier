@@ -21,6 +21,24 @@ A web app built with **Streamlit** and **TensorFlow (Keras)** that allows users 
 
 ---
 
+## 📂 Dataset
+
+The system was trained and evaluated on a comprehensive dataset of sports images comprising **100 different sports categories**.
+
+- **Dataset Split:**
+  - 🏋️ Training Set: **13,500 images**
+  - 📊 Validation Set: **500 images**
+  - 🧪 Test Set: **500 images**
+
+- **Dataset Structure:**
+  - Number of Classes: **100**
+  - Each class contains diverse sports images for robust model generalization.
+
+- **Dataset Source:**  
+  [🔗 Dataset Link](https://www.kaggle.com/datasets/gpiosenka/sports-classification)
+
+  ---
+
 ## 🧠 Model Details
 
 - Base model: `Xception` (transfer learning)  Accuracy: %98
@@ -33,7 +51,7 @@ A web app built with **Streamlit** and **TensorFlow (Keras)** that allows users 
 
 ## 🖼️ Sample Sports Classes
 
-Here are some example labels (can be edited in `labels.json`):
+Here are some example labels (can be edited in `labels.json` it has 100 sports classes):
 
 - Soccer
 - Basketball
@@ -57,18 +75,8 @@ Here are some example labels (can be edited in `labels.json`):
 
 ## 📁 Project Structure
 
+- `xception-0-98-sports-classification.ipynb` — model notenook, you should run it to download `model_xception.h5` — Pre-trained Keras model (Xception) used for prediction.
 - `app.py` — Main Streamlit app that runs the image classifier interface.
-- `model_xception.h5` — Pre-trained Keras model (Xception) used for prediction.
 - `labels.json` — JSON file storing the class labels (e.g., Basketball, Football, etc.).
 - `requirements.txt` — List of dependencies required to run the project.
 - `README.md` — Documentation and instructions for the project.
-
----
-
-## 🔗 Kaggle Model Notebook
-
-Due to GitHub file size limits, please download my pre-trained model from:
-
-🔗 [Kaggle - Sport Image Model](https://www.kaggle.com/code/rahmamabdelfattah/xception-0-98-sports-classification)
-
-After downloading, place `model_xception.h5` and `labels.json` in the root folder.
